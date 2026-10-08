@@ -273,8 +273,7 @@ jobs:
             --dart-define=ENABLE_DEPTH_3D=true --split-per-abi --target-platform android-arm64 \
             --dart-define=APP_VERSION=${{ steps.version.outputs.version }} \
             --build-name=${{ steps.version.outputs.version }} \
-            --build-number=${{ steps.version.outputs.versionCode }} \
-            --enable-impeller
+            --build-number=${{ steps.version.outputs.versionCode }}
 
       # 原子随身听按包名识别合作应用：额外构建一个 arm64-v8a 兼容包。
       # 只覆盖 applicationId，namespace / Kotlin 包路径 / MethodChannel 均保持原样。
