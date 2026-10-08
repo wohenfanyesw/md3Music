@@ -46,7 +46,7 @@ android {
         versionName = flutter.versionName
         // 渲染引擎固定为 skia（EnableImpeller=false，兼容优先）。Flutter 3.44 只认
         // manifest 静态值。仅此一处、无 flavor：保证 split-per-abi 产物名不含引擎标识。
-        manifestPlaceholders["enableImpeller"] = "false"
+        manifestPlaceholders["enableImpeller"] = "true"
         // USB 独占输出 C++ 驱动：只编译与 jniLibs 相同的 4 个 ABI
         externalNativeBuild {
             cmake {
