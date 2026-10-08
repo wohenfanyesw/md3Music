@@ -227,7 +227,7 @@
              不打包 impeller 变体，杜绝 split-per-abi 出双份安装包 -->
         <meta-data
             android:name="io.flutter.embedding.android.EnableImpeller"
-            android:value="${enableImpeller}" />
+            android:value="true" />
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
